@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/carta-cafe/font/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Carta de Menú -  Café Cabrera</title>
+    <style>
+        body {
+            background-color: #333; /* Fondo gris para el espacio sobrante */
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%; /* Ajusta el ancho según tus necesidades */
+            max-width: 1200px; /* Ancho máximo del contenido */
+            background-color: #000; /* Fondo negro para el contenido principal */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2; /* Ajusta la opacidad según tus necesidades */
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .logo-container img {
+            height: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+            margin-right: 10px; /* Espacio entre el logo y el nombre */
+        }
+
+        .content {
+            display: flex;
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            flex: 1;
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .menu-container {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-family: 'Montagna LTD';
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .header h2 {
+            font-family: 'Montagna LTD';
+            font-size: 2em;
+            margin-top: 30px;
+            text-align: justify;
+        }
+        h2{
+            font-family: 'Montagna LTD';
+            font-size: 2em;
+            margin-top: 30px;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            font-family: 'Edu AU VIC WA NT Hand';
+            padding: 10px;
+            border: none; /* Elimina las líneas de borde */
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .product {
+            text-align: left;
+        }
+
+        .price {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .no-price {
+            color: #aaa; /* Color gris para los elementos sin precio */
+            text-align: center;
+        }
+
+        /* Oculta la tabla de Dessert */
+        .hide-table {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer-container">
+  <div class="container">
+    <img src="hojas.png" alt="Leaves Image" class="header-image"> <!-- Imagen de hojas como fondo -->
+    <div class="content">
+      <div class="image-container"></div>
+      <div class="menu-container">
+        <div class="logo-container">
+          <img src="logo.png" alt="Cafeteria Logo"> <!-- Imagen del logo de la cafetería -->
+        </div>
+        <div class="header">
+          <h1>NUESTRA CARTA</h1>
+          <h2>Café</h2>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Caliente</th>
+              <th>Frío</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product">Espresso</td>
+              <td class="price">4.50</td>
+              <td class="price">5.50</td>
+            </tr>
+            <tr>
+              <td class="product">Americano</td>
+              <td class="price">5.00</td>
+              <td class="price">5.50</td>
+            </tr>
+            <tr>
+              <td class="product">Mocha</td>
+              <td class="price">6.00</td>
+              <td class="price">6.50</td>
+            </tr>
+            <tr>
+              <td class="product">Cappuccino</td>
+              <td class="price">7.00</td>
+              <td class="no-price">-</td>
+            </tr>
+            <tr>
+              <td class="product">Cold Milkshake</td>
+              <td class="no-price">-</td>
+              <td class="price">7.50</td>
+            </tr>
+            <tr>
+              <td class="product">Cold Brew</td>
+              <td class="no-price">-</td>
+              <td class="price">6.00</td>
+            </tr>
+            <tr>
+              <td class="product">Frappuccino</td>
+              <td class="no-price">-</td>
+              <td class="price">7.50</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Postres</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product">Croissant</td>
+              <td class="price">5.50</td>
+            </tr>
+            <tr>
+              <td class="product">Cupcake</td>
+              <td class="price">4.00</td>
+            </tr>
+            <tr>
+              <td class="product">Strawberry Cake</td>
+              <td class="price">5.00</td>
+            </tr>
+            <tr>
+              <td class="product">Cookie</td>
+              <td class="price">4.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
